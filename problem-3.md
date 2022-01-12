@@ -28,3 +28,55 @@ Write a static method named `isSorted` that accepts an array of doubles as a par
 ## Task 3
 
 In both these methods if the array has zero elements then `NoElementsInArrayException` should be thrown.
+```java
+import java.util.*;
+public class Main
+{
+    public static boolean is Unique(int[] a)
+    {
+        if(a.length<=0>)
+        {
+            System.out.println("NOElementsinArrayException");
+
+        }
+        for(int i=0; i< a.length-1; i++)
+        {
+            for(int j=i+1; j<a.length; j++)
+            {
+                if(a[i]==a[j])
+                return false;
+            }
+        }
+        return true;
+    }
+    public static boolean isSorted(double[] list)
+    {
+        if(list.length<=0)
+        {
+            System.out.println("NOElementlnArrayException");
+        }
+        if(list.length<=1)
+        return true;
+        
+        for(int i=0; i<list.length-1;i++)
+        {
+            if(list[i]>list[i+1])
+            return false;
+        }
+        return true;
+    }
+    public static void main(String[] args)
+    {
+       Scanner sc = new
+       Scanner(System.in);
+       int n=sc.nextint();
+       int a[]=new int[n];
+
+       for(int i=0; i<n; i++)
+       {
+           list[i]=sc.nextDouble();
+       }
+       System.out.println(Main.isUnique(a));
+       System.out.println(Main.isSorted(list));
+    }
+}
